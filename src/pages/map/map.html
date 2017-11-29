@@ -1,0 +1,47 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      Fin Driving Routes
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+    <div id="floating-panel">
+        <b>Start: </b>
+        <select [(ngModel)]="start" id="start" (change)="calculateAndDisplayRoute()">
+          <option value="helsinki">Helsinki</option>
+          <option value="tampere">Tampere</option>
+          <option value="turku">Turku/option>
+          <option value="oulu">Oulu</option>
+          <option value="jyväskylä">Jyväskylä</option>
+          <option value="lahti">Lahti</option>
+          <option value="pori">Pori</option>
+          <option value="kuopio">Kuopio</option>
+          <option value="vaasa">Vaasa</option>
+          <option value="joensuu">Joensuu</option>
+          <option value="lappeenranta">Lappeenranta</option>
+          <option value="kotka">Kotka</option>
+          <option value="rovaniemi">Rovaniemi</option>
+        </select><br>
+        <b>End: </b>
+        <select [(ngModel)]="end" id="end" (change)="calculateAndDisplayRoute()">
+          <option value="helsinki">Helsinki</option>
+          <option value="tampere">Tampere</option>
+          <option value="turku">Turku/option>
+          <option value="oulu">Oulu</option>
+          <option value="jyväskylä">Jyväskylä</option>
+          <option value="lahti">Lahti</option>
+          <option value="pori">Pori</option>
+          <option value="kuopio">Kuopio</option>
+          <option value="vaasa">Vaasa</option>
+          <option value="joensuu">Joensuu</option>
+          <option value="lappeenranta">Lappeenranta</option>
+          <option value="kotka">Kotka</option>
+          <option value="rovaniemi">Rovaniemi</option>
+        </select>
+        </div>
+        <div #map id="map"></div>
+  
+
+</ion-content>
